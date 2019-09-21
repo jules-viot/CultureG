@@ -12,6 +12,8 @@
 		8440E74523353E3F00D43975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440E74323353E3F00D43975 /* Main.storyboard */; };
 		8440E74723353E4000D43975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8440E74623353E4000D43975 /* Assets.xcassets */; };
 		8440E74A23353E4000D43975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440E74823353E4000D43975 /* LaunchScreen.storyboard */; };
+		8440E755233571DD00D43975 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E754233571DD00D43975 /* RoundButton.swift */; };
+		8440E75723362AA200D43975 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E75623362AA200D43975 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8440E74623353E4000D43975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8440E74923353E4000D43975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8440E74B23353E4000D43975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8440E754233571DD00D43975 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		8440E75623362AA200D43975 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		8440E73E23353E3F00D43975 /* CultureG */ = {
 			isa = PBXGroup;
 			children = (
+				8440E7512335488800D43975 /* Model */,
+				8440E752233548AC00D43975 /* View */,
+				8440E753233548B400D43975 /* Controller */,
 				8440E73F23353E3F00D43975 /* AppDelegate.swift */,
-				8440E74123353E3F00D43975 /* ViewController.swift */,
 				8440E74323353E3F00D43975 /* Main.storyboard */,
 				8440E74623353E4000D43975 /* Assets.xcassets */,
 				8440E74823353E4000D43975 /* LaunchScreen.storyboard */,
 				8440E74B23353E4000D43975 /* Info.plist */,
 			);
 			path = CultureG;
+			sourceTree = "<group>";
+		};
+		8440E7512335488800D43975 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8440E752233548AC00D43975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8440E754233571DD00D43975 /* RoundButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8440E753233548B400D43975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8440E74123353E3F00D43975 /* ViewController.swift */,
+				8440E75623362AA200D43975 /* GameViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8440E75723362AA200D43975 /* GameViewController.swift in Sources */,
+				8440E755233571DD00D43975 /* RoundButton.swift in Sources */,
 				8440E74223353E3F00D43975 /* ViewController.swift in Sources */,
 				8440E74023353E3F00D43975 /* AppDelegate.swift in Sources */,
 			);
