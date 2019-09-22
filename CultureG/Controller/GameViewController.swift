@@ -45,7 +45,8 @@ class GameViewController: UIViewController {
     }
     
     // Fonction qui choisi une question puis l'enlève
-    func pickQuestion(){
+    @objc func pickQuestion(){
+        buttonBackgroundSetup()
         if Questions.count > 0 {
             qNumber = Int(arc4random_uniform(UInt32(Questions.count)))
             qLabel.text = Questions[qNumber].question
@@ -64,6 +65,14 @@ class GameViewController: UIViewController {
             NSLog("Done!")
         }
     }
+    
+    // Remet
+    func buttonBackgroundSetup() {
+        for i in 0..<repButtons.count {
+            repButtons[i].backgroundColor = nil
+        }
+    }
+    
 
     //Bouton retour
     @IBAction func returnBouton(_ sender: Any) {
@@ -74,7 +83,8 @@ class GameViewController: UIViewController {
     @IBAction func btn1(_ sender: Any) {
         //Si la réponse choisi correspond
         if answerNumber == 0 {
-            pickQuestion()
+            repButtons[0].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
         }
@@ -82,7 +92,8 @@ class GameViewController: UIViewController {
     @IBAction func btn2(_ sender: Any) {
         //Si la réponse choisi correspond
         if answerNumber == 1 {
-            pickQuestion()
+            repButtons[1].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
         }
@@ -90,7 +101,8 @@ class GameViewController: UIViewController {
     @IBAction func btn3(_ sender: Any) {
         //Si la réponse choisi correspond
         if answerNumber == 2 {
-            pickQuestion()
+            repButtons[2].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
         }
@@ -98,7 +110,8 @@ class GameViewController: UIViewController {
     @IBAction func btn4(_ sender: Any) {
         //Si la réponse choisi correspond
         if answerNumber == 3 {
-            pickQuestion()
+            repButtons[3].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
         }
