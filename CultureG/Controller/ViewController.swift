@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         setupLayer()
     }
     
+    //Mettre la barre de statut en blanc
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBAction func playButton(_ sender: Any) {
         performSegue(withIdentifier: "playSegue", sender: nil)
     }

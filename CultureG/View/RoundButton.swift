@@ -21,10 +21,13 @@ class RoundButton: UIButton {
     }
     
     func setup() {
-    layer.cornerRadius = 20
-    layer.borderWidth = 5
-    layer.borderColor = UIColor.white.cgColor
-    setTitleColor(.white, for: .normal)
+        layer.cornerRadius = 20
+        layer.borderWidth = 5
+        layer.borderColor = UIColor.white.cgColor
+        setTitleColor(.white, for: .normal)
+        
+        
     }
+    
 }
 
