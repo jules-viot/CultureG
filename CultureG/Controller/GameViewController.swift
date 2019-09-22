@@ -8,13 +8,6 @@
 
 import UIKit
 
-struct Question {
-    var question: String
-    var answers: [String]
-    var answer: Int!
-    var valeur: Int!
-}
-
 class GameViewController: UIViewController {
     
     @IBOutlet weak var qLabel: UILabel!
@@ -30,8 +23,10 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         setupLayer()
         
-        Questions = [Question(question: "En quelle année Charlemagne se fait-il sacrer empereur ?", answers: ["756 ap. J.-C","800 ap. J.-C","787 ap. J.-C","843 ap. J.-C"], answer: 1, valeur: 30), Question(question: "À quel célèbre écrivain et philosophe doit-on le Contrat social et La nouvelle Héloïse ?", answers: ["D'Alembert","Mirabeau","Rousseau","Chateaubriand"], answer: 2, valeur: 30)]
+        //Récupère toutes les questions et les réponses de la collection
+        Questions = QuestionCollection().all()
         
+        //Lance la première question
         pickQuestion()
     }
     
@@ -40,6 +35,7 @@ class GameViewController: UIViewController {
         return .lightContent
     }
     
+    //Met en place le dégrader de fond
     func setupLayer(){
         layer.frame = view.bounds
         layer.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
@@ -76,6 +72,7 @@ class GameViewController: UIViewController {
     
     //Les 4 boutons réponse
     @IBAction func btn1(_ sender: Any) {
+        //Si la réponse choisi correspond
         if answerNumber == 0 {
             pickQuestion()
         } else {
@@ -83,6 +80,7 @@ class GameViewController: UIViewController {
         }
     }
     @IBAction func btn2(_ sender: Any) {
+        //Si la réponse choisi correspond
         if answerNumber == 1 {
             pickQuestion()
         } else {
@@ -90,6 +88,7 @@ class GameViewController: UIViewController {
         }
     }
     @IBAction func btn3(_ sender: Any) {
+        //Si la réponse choisi correspond
         if answerNumber == 2 {
             pickQuestion()
         } else {
@@ -97,6 +96,7 @@ class GameViewController: UIViewController {
         }
     }
     @IBAction func btn4(_ sender: Any) {
+        //Si la réponse choisi correspond
         if answerNumber == 3 {
             pickQuestion()
         } else {
