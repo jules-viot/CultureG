@@ -16,19 +16,28 @@ class QuestionCollection {
             Question(question: "En quelle année Charlemagne se fait-il sacrer empereur ?",
                      answers: ["756 ap. J.-C","800 ap. J.-C","787 ap. J.-C","843 ap. J.-C"],
                      answer: 1,
-                     valeur: 30),
+                     valeur: 30,
+                     categorie:"Histoire"),
             Question(question: "À quel célèbre écrivain et philosophe doit-on le Contrat social et La nouvelle Héloïse ?",
                      answers: ["D'Alembert","Mirabeau","Rousseau","Chateaubriand"],
                      answer: 2,
-                     valeur: 30),
+                     valeur: 30,
+                     categorie:"Histoire"),
             Question(question: "De quelle ville française le cannelé est-il une spécialité ?",
                      answers: ["Toulouse","Marseille","Nantes","Bordeaux"],
                      answer: 3,
-                     valeur: 15),
+                     valeur: 15,
+                     categorie:"Cuisine"),
             Question(question: "Quelle est la capitale de l’Inde ?",
                      answers: ["Calcutta","Mumbai","New Delhi","Bangalore"],
                      answer: 2,
-                     valeur: 25)]
+                     valeur: 25,
+                     categorie:"Géographie"),
+            Question(question: "Quel est le nom du principal indice boursier de la place de Paris ?",
+                     answers: ["Le CAC 40","Le Dax","Le Nifty","Le Footsie"],
+                     answer: 0,
+                     valeur: 15,
+                     categorie:"France")]
         
         return Questions
     }

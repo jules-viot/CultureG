@@ -13,4 +13,5 @@ struct Question {
     var answers: [String]
     var answer: Int!
     var valeur: Int!
+    var categorie: String
 }

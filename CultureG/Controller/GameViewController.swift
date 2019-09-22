@@ -87,6 +87,9 @@ class GameViewController: UIViewController {
             perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
+            repButtons[0].backgroundColor = .red
+            repButtons[answerNumber].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 4)
         }
     }
     @IBAction func btn2(_ sender: Any) {
@@ -96,6 +99,9 @@ class GameViewController: UIViewController {
             perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
+            repButtons[1].backgroundColor = .red
+            repButtons[answerNumber].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 4)
         }
     }
     @IBAction func btn3(_ sender: Any) {
@@ -105,6 +111,9 @@ class GameViewController: UIViewController {
             perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
+            repButtons[2].backgroundColor = .red
+            repButtons[answerNumber].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 4)
         }
     }
     @IBAction func btn4(_ sender: Any) {
@@ -114,6 +123,9 @@ class GameViewController: UIViewController {
             perform(#selector(pickQuestion), with: nil, afterDelay: 2)
         } else {
             NSLog("Wrong!")
+            repButtons[3].backgroundColor = .red
+            repButtons[answerNumber].backgroundColor = .green
+            perform(#selector(pickQuestion), with: nil, afterDelay: 4)
         }
     }
     
