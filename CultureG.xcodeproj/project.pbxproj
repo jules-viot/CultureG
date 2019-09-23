@@ -16,6 +16,7 @@
 		8440E75723362AA200D43975 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E75623362AA200D43975 /* GameViewController.swift */; };
 		8440E75B2337B57F00D43975 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E75A2337B57F00D43975 /* Questions.swift */; };
 		8440E75D2337B5AF00D43975 /* QuestionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E75C2337B5AF00D43975 /* QuestionCollection.swift */; };
+		8440E760233829DE00D43975 /* CultureG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8440E75E233829DE00D43975 /* CultureG.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8440E75623362AA200D43975 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8440E75A2337B57F00D43975 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		8440E75C2337B5AF00D43975 /* QuestionCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollection.swift; sourceTree = "<group>"; };
+		8440E75F233829DE00D43975 /* CultureG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CultureG.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		8440E73323353E3F00D43975 = {
 			isa = PBXGroup;
 			children = (
+				8440E75E233829DE00D43975 /* CultureG.xcdatamodeld */,
 				8440E73E23353E3F00D43975 /* CultureG */,
 				8440E73D23353E3F00D43975 /* Products */,
 			);
@@ -176,6 +179,7 @@
 				8440E74223353E3F00D43975 /* ViewController.swift in Sources */,
 				8440E75D2337B5AF00D43975 /* QuestionCollection.swift in Sources */,
 				8440E75B2337B57F00D43975 /* Questions.swift in Sources */,
+				8440E760233829DE00D43975 /* CultureG.xcdatamodeld in Sources */,
 				8440E74023353E3F00D43975 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +382,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8440E75E233829DE00D43975 /* CultureG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8440E75F233829DE00D43975 /* CultureG.xcdatamodel */,
+			);
+			currentVersion = 8440E75F233829DE00D43975 /* CultureG.xcdatamodel */;
+			path = CultureG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8440E73423353E3F00D43975 /* Project object */;
 }

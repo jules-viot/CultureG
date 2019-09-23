@@ -37,7 +37,22 @@ class QuestionCollection {
                      answers: ["Le CAC 40","Le Dax","Le Nifty","Le Footsie"],
                      answer: 0,
                      valeur: 15,
-                     categorie:"France")]
+                     categorie:"Economie"),
+            Question(question: "Quelle est la capitale de la Suède ?",
+                     answers: ["Oslo","Coppenhage","Helsinki","Stockolm"],
+                     answer: 3,
+                     valeur: 25,
+                     categorie:"Géographie"),
+            Question(question: "Quel pays a interdit la construction de minaret après un referendum en 2009 ?",
+                     answers: ["La Suisse","La France","Le Royaum-Uni","La Belgique"],
+                     answer: 0,
+                     valeur: 30,
+                     categorie:"Géographie"),
+            Question(question: "Dans quel roman de Victor Hugo trouve-t-on le personnage de Quasimodo ?",
+                     answers: ["L'Homme qui rit","Notre-Dame-De-Paris","Les Misérables","Quatrevingt-treiz"],
+                     answer: 1,
+                     valeur: 25,
+                     categorie:"Litérature")]
         
         return Questions
     }
