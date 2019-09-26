@@ -11,13 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     let layer = CAGradientLayer()
     let button = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let score = UserDefaults.standard.integer(forKey: "score")
+        scoreLabel.text = ("score: \(score)")
         setupLayer()
     }
     

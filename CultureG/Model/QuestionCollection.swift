@@ -52,7 +52,32 @@ class QuestionCollection {
                      answers: ["L'Homme qui rit","Notre-Dame-De-Paris","Les Misérables","Quatrevingt-treiz"],
                      answer: 1,
                      valeur: 25,
-                     categorie:"Litérature")]
+                     categorie:"Littérature"),
+            Question(question: "Quelle est la hauteur du Mont Blanc ?",
+                     answers: ["4808m","3808m","4728m","5018m"],
+                     answer: 0,
+                     valeur: 25,
+                     categorie:"Géographie"),
+            Question(question: "Quel fleuve traverse le Liban, la Syrie et la Turquie ?",
+                     answers: ["Le Chatt-el-Arab","Le Tigre","Le Jourdain","L'Oronte"],
+                     answer: 3,
+                     valeur: 35,
+                     categorie:"Géographie"),
+            Question(question: "Par qui a était inventé la pénicilline ?",
+                     answers: ["Louis Pasteur","Alexander Fleming","Ambroise Paré","Marie Curie"],
+                     answer: 1,
+                     valeur: 30,
+                     categorie:"Science"),
+            Question(question: "Sur terre, quelle est le plus grand océan?",
+                     answers: ["Océan Arctique","Océan Pacifique","Océan Atlantique","Océan Indien"],
+                     answer: 2,
+                     valeur: 20,
+                     categorie:"Géographie"),
+            Question(question: "Combien de joueurs compte une équipe de beach-volley ?",
+                     answers: ["6","5","4","2"],
+                     answer: 3,
+                     valeur: 20,
+                     categorie:"Sport")]
         
         return Questions
     }
